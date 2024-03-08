@@ -1,3 +1,4 @@
+import 'package:convert_temperature/body.dart';
 import 'package:flutter/material.dart';
 
 class Open extends StatelessWidget {
@@ -5,16 +6,16 @@ class Open extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.blue[300],
       height: double.infinity,
       width: double.infinity,
       child:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            "assets/images/home-image.png",
-            height: 250,
-            width: 250,
+            "assets/images/logo.png",
+            height: 350,
+            width: 350,
             ),
 
           Container(
@@ -22,7 +23,7 @@ class Open extends StatelessWidget {
           ),
 
           Text(
-            "CONVTEMP",
+            "P P T",
             style: TextStyle(
               color: Colors.white,
               fontSize: 30
@@ -34,7 +35,7 @@ class Open extends StatelessWidget {
             ),
 
           Text(
-            "Converso de temperatura",
+            "Pedra Papel ou Tesoura?",
             style: TextStyle(
               color: Colors.white,
               fontSize: 22
@@ -49,10 +50,14 @@ class Open extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.yellow[700]
             ),
-            onPressed: (){}, 
+            onPressed: (){
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => HomeScreen())
+              );
+            }, 
             child:
              Text(
-              "Acessar conversor",
+              "JOGAR",
               style: TextStyle(
                 color: Colors.white
               ),
