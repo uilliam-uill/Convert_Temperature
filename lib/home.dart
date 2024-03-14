@@ -14,8 +14,8 @@ class Open extends StatelessWidget {
         children: [
           Image.asset(
             "assets/images/logo.png",
-            height: 350,
-            width: 350,
+            height: 250,
+            width: 250,
             ),
 
           Container(
@@ -23,25 +23,12 @@ class Open extends StatelessWidget {
           ),
 
           Text(
-            "P P T",
+            "JokenPoo",
             style: TextStyle(
               color: Colors.white,
               fontSize: 30
             )
             ),
-
-            Container(
-              height: 20,
-            ),
-
-          Text(
-            "Pedra Papel ou Tesoura?",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 22
-            )
-          ),
-
             Container(
               height: 5,
             ),
